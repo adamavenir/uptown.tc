@@ -971,7 +971,7 @@ header {
   max-width: 650px;
 }
 .container {
-  max-width: 580px;
+  max-width: 960px;
 }
 section {
   margin: 20px 0;
@@ -979,12 +979,15 @@ section {
   border-bottom: 1px solid #e6eaed;
 }
 section:first-of-type {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 section:last-of-type {
   border-bottom: 0px;
 }
 h2 {
+  text-align: center;
+}
+.content-centered {
   text-align: center;
 }
 p,
@@ -996,6 +999,28 @@ footer {
   height: 100px;
   background-image: url("/img/stripes.svg");
   background-size: 100%;
+}
+ul {
+  padding-top: 10px;
+}
+ul li {
+  width: 30%;
+  padding: 0 10px;
+  display: inline-box;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+ul img {
+  width: 150px;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+ul .space {
+  height: 90px;
+  width: auto;
+  margin-bottom: -5px;
+  position: relative;
+  top: -10px;
 }
 @media screen and (max-width: 730px) {
   header {
@@ -1012,6 +1037,38 @@ footer {
   footer {
     background-size: 200%;
     height: 80px;
+  }
+}
+@media screen and (max-width: 660px) {
+  br {
+    display: none;
+  }
+  ul li {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  ul li:last-child {
+    margin-bottom: 0;
+  }
+  ul li:last-child p {
+    margin-bottom: 0;
+  }
+  ul img {
+    width: 100px;
+    position: absolute;
+    left: 0;
+  }
+  ul .space {
+    position: absolute;
+    left: 25px;
+    width: 50px;
+    top: -15px;
+  }
+  ul p {
+    text-align: left;
+    padding: 0px 0px 0px 120px;
   }
 }
 @media screen and (max-width: 600px) {
