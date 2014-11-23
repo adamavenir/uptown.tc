@@ -1048,6 +1048,8 @@ ul .space {
     display: block;
     position: relative;
     margin-bottom: 15px;
+    margin: 0 auto 15px auto;
+    width: 250px;
   }
   ul li:last-child {
     margin-bottom: 0;
@@ -1064,12 +1066,13 @@ ul .space {
     position: absolute;
     left: 25px;
     width: 50px;
-    top: -15px;
+    top: -20px;
   }
   ul p {
     text-align: left;
-    margin-top: 0;
+    margin-top: -2px;
     padding: 0px 0px 0px 120px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 600px) {
